@@ -1,0 +1,76 @@
+.Header {
+    background: white;
+    border-bottom: 1px solid rgb(245, 243, 247);
+    height: 63px;
+    width: 100%;
+    z-index: 999;
+}
+
+@media (min-width: 750px) {
+    .Header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+}
+
+.Container {
+    padding-left: 1.05rem;
+    padding-right: 1.05rem;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.LogoLink {
+    display: flex;
+    margin-right: 0.7rem;
+    -webkit-box-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.LogoImage {
+    height: 32px;
+}
+
+.NavContainer {
+    display: flex;
+    overflow-x: auto;
+    align-self: flex-end;
+    flex-grow: 1;
+    margin: 0 0 0 5px;
+    list-style: none;
+    height: 62px;
+}
+
+.NavLink {
+    padding: 0 10px;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 62px;
+    line-height: 62px;
+    color: inherit;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    top: 0;
+    z-index: 1;
+    border-bottom: 0.125rem solid transparent;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+.NavLink:hover {
+    text-decoration: none;
+}
+
+.NavLinkActive {
+    border-bottom: 2px solid #F9634E;
+    color: #F9634E;
+}

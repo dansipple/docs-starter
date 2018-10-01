@@ -1,0 +1,9 @@
+.Sidebar {
+    width: 302px;
+    position: fixed;
+    top: 62px;
+    bottom: 0;
+    border-right: 1px solid rgb(237, 231, 243);
+    background: rgb(251, 250, 252);
+    border-bottom: 1px solid rgb(237, 231, 243);
+}
