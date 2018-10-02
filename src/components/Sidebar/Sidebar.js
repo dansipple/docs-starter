@@ -1,11 +1,18 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { itemListDocs } from '../../utils/sidebar/item-list';
+
+import Item from './Item';
 
 import styles from './styles.module.css';
 
-const Sidebar = ({ itemList }) => (
+const Sidebar = ({ itemList, location }) => (
   <div className={styles.Sidebar}>
     <ul>
+      {
+        itemListDocs.map((item, index) => (
+          <Item key={index} item={item} currentPage={location} />
+        ))
+      }
     </ul>
   </div>
 );

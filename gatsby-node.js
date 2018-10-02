@@ -24,6 +24,9 @@ exports.createPages = ({ graphql, actions }) => {
               fields {
                 slug
               }
+              headings(depth: h1) {
+                 value
+              }
             }
           }
         }
@@ -37,6 +40,7 @@ exports.createPages = ({ graphql, actions }) => {
             // Data passed to context is available
             // in page queries as GraphQL variables.
             slug: node.fields.slug,
+            title: node.headings.value
           },
         })
       });
